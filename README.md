@@ -213,3 +213,18 @@ Understanding the Superset Points of View
 
 <!-- telemetry/analytics pixel: -->
 <img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=bc1c90cd-bc04-4e11-8c7b-289fb2839492" />
+
+## Deploy Embeddable Superset
+- Git clone the repository
+`git clone https://github.com/CENTERS-FOR-INTERNATIONAL-PROGRAMS/dmi-superset.git `
+
+- Deploy the embeddable superset by running
+`docker compose -f master_launch_superset.yml up`
+
+- Login to superset on http://localhost:3223
+
+- Create a Guest user and add appropriate roles as Public and Gamma.
+- Add appropriate permissions in the User Roles
+- Select a Dasshboard and click on Embed Dashboard. An embeddable code will be generated that you can use in the ./Test-Embed/test.html
+- Run ./Test-Embed/test.html to view the embedded dashboard.
+
